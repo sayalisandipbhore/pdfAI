@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <title>jQuery Mobile App</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet"
+        href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home">
+
+        <!-- HEADER -->
+        <div data-role="header"
+            data-position="fixed"
+            data-theme="b">
+
+            <h1>College Mobile App</h1>
+
+        </div>
+
+        <!-- NAVBAR -->
+        <div data-role="navbar">
+
+            <ul>
+
+                <li>
+                    <a href="#home"
+                        class="ui-btn-active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div role="main"
+            class="ui-content">
+
+            <h2>
+                Welcome Student
+            </h2>
+
+            <p>
+                This mobile website is created using
+                jQuery Mobile framework.
+            </p>
+
+            <!-- IMAGE -->
+            <img src="https://picsum.photos/500/250"
+                style="width:100%; border-radius:10px;">
+
+            <br><br>
+
+            <!-- BUTTONS -->
+            <a href="#login"
+                class="ui-btn ui-btn-b ui-corner-all">
+
+                Student Login
+
+            </a>
+
+            <a href="#courses"
+                class="ui-btn ui-btn-a ui-corner-all">
+
+                View Courses
+
+            </a>
+
+            <!-- COLLAPSIBLE -->
+            <div data-role="collapsible">
+
+                <h4>
+                    Latest Notice
+                </h4>
+
+                <p>
+                    Internal exams will start from next week.
+                </p>
+
+            </div>
+
+            <!-- LISTVIEW -->
+            <ul data-role="listview"
+                data-inset="true">
+
+                <li>
+                    <a href="#">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Attendance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Results
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Assignments
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div data-role="footer"
+            data-position="fixed"
+            data-theme="b">
+
+            <h4>
+                © 2026 College App
+            </h4>
+
+        </div>
+
+    </div>
+
+    <!-- LOGIN PAGE -->
+    <div data-role="page" id="login">
+
+        <div data-role="header"
+            data-theme="b">
+
+            <h1>Login</h1>
+
+        </div>
+
+        <div role="main"
+            class="ui-content">
+
+            <form>
+
+                <label>
+                    Username
+                </label>
+
+                <input type="text"
+                    placeholder="Enter Username">
+
+                <label>
+                    Password
+                </label>
+
+                <input type="password"
+                    placeholder="Enter Password">
+
+                <button class="ui-btn ui-btn-b">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <!-- POPUP BUTTON -->
+            <a href="#popupMsg"
+                data-rel="popup"
+                class="ui-btn ui-btn-inline ui-corner-all">
+
+                Show Popup
+
+            </a>
+
+            <!-- POPUP -->
+            <div data-role="popup"
+                id="popupMsg"
+                class="ui-content">
+
+                <h3>
+                    Login Successful!
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- COURSES PAGE -->
+    <div data-role="page" id="courses">
+
+        <div data-role="header"
+            data-theme="b">
+
+            <h1>Courses</h1>
+
+        </div>
+
+        <div role="main"
+            class="ui-content">
+
+            <ul data-role="listview"
+                data-filter="true"
+                data-filter-placeholder="Search Course">
+
+                <li>
+                    <a href="#">
+                        Computer Science
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Information Technology
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Mechanical Engineering
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Civil Engineering
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div data-role="page" id="about">
+
+        <div data-role="header"
+            data-theme="b">
+
+            <h1>About</h1>
+
+        </div>
+
+        <div role="main"
+            class="ui-content">
+
+            <h2>
+                About jQuery Mobile
+            </h2>
+
+            <p>
+                jQuery Mobile is a framework used for creating
+                responsive mobile websites and applications.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div data-role="page" id="contact">
+
+        <div data-role="header"
+            data-theme="b">
+
+            <h1>Contact Us</h1>
+
+        </div>
+
+        <div role="main"
+            class="ui-content">
+
+            <form>
+
+                <label>
+                    Name
+                </label>
+
+                <input type="text">
+
+                <label>
+                    Email
+                </label>
+
+                <input type="email">
+
+                <label>
+                    Message
+                </label>
+
+                <textarea></textarea>
+
+                <button class="ui-btn ui-btn-b">
+
+                    Submit
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
